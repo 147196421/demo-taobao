@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>橙集市 - 综合电商首页</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="location">中国大陆</div>
+        <nav class="quick-links" aria-label="快捷导航">
+          <a href="#">亲，请登录</a>
+          <a href="#">免费注册</a>
+          <a href="#">我的订单</a>
+          <a href="#">购物车 <span id="cartCount">0</span></a>
+          <a href="#">收藏夹</a>
+          <a href="#">商家中心</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <a href="#" class="logo" aria-label="橙集市首页">橙集市</a>
+      <div class="search-panel">
+        <div class="search-tabs" role="tablist" aria-label="搜索类型">
+          <button class="active" type="button">宝贝</button>
+          <button type="button">店铺</button>
+          <button type="button">内容</button>
+        </div>
+        <form class="search-box" id="searchForm">
+          <input id="searchInput" type="search" placeholder="搜索衣服、手机、家居好物" aria-label="搜索商品">
+          <button type="submit">搜索</button>
+        </form>
+        <div class="hotwords">
+          <a href="#">夏日穿搭</a>
+          <a href="#">智能手表</a>
+          <a href="#">轻食餐具</a>
+          <a href="#">通勤包</a>
+          <a href="#">露营装备</a>
+        </div>
+      </div>
+      <div class="app-code">
+        <span>手机逛</span>
+        <div class="qr-mark">APP</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="nav-strip" aria-label="主导航">
+      <div class="nav-inner">
+        <strong>主题市场</strong>
+        <a href="#">天猫风尚</a>
+        <a href="#">聚划算</a>
+        <a href="#">百亿补贴</a>
+        <a href="#">淘抢购</a>
+        <a href="#">二手优品</a>
+        <a href="#">全球购</a>
+      </div>
+    </section>
+
+    <section class="hero-grid">
+      <aside class="category-panel" aria-label="商品分类">
+        <a href="#">女装 / 男装 / 内衣</a>
+        <a href="#">鞋靴 / 箱包 / 配饰</a>
+        <a href="#">手机 / 数码 / 家电</a>
+        <a href="#">美妆 / 洗护 / 个护</a>
+        <a href="#">运动 / 户外 / 乐器</a>
+        <a href="#">家居 / 家纺 / 家装</a>
+        <a href="#">母婴 / 玩具 / 宠物</a>
+        <a href="#">食品 / 生鲜 / 茶酒</a>
+        <a href="#">汽车 / 工具 / 办公</a>
+        <a href="#">医药 / 保健 / 鲜花</a>
+      </aside>
+
+      <section class="hero-main" aria-label="促销活动">
+        <div class="hero-card">
+          <div class="hero-copy">
+            <span class="eyebrow">618 灵感生活季</span>
+            <h1>好物上新，今天就逛点不一样的</h1>
+            <p>精选穿搭、数码、家居与美食，每天 10 点限时开抢。</p>
+            <button type="button" id="heroButton">立即逛逛</button>
+          </div>
+          <img src="https://images.unsplash.com/photo-1511556820780-d912e42b4980?auto=format&fit=crop&w=900&q=80" alt="购物袋和时尚商品">
+        </div>
+        <div class="promo-row">
+          <article><span>限时秒杀</span><strong>爆款低至 5 折</strong></article>
+          <article><span>新品首发</span><strong>潮流单品抢先看</strong></article>
+          <article><span>会员福利</span><strong>满 199 减 30</strong></article>
+        </div>
+      </section>
+
+      <aside class="member-panel" aria-label="用户服务">
+        <div class="avatar">橙</div>
+        <h2>Hi，欢迎来逛</h2>
+        <div class="member-actions">
+          <button type="button">登录</button>
+          <button type="button">注册</button>
+          <button type="button">开店</button>
+        </div>
+        <div class="notice">
+          <strong>公告</strong>
+          <p>品质好货天天送券，放心购、极速退服务同步升级。</p>
+        </div>
+        <div class="service-grid">
+          <a href="#">充值</a>
+          <a href="#">旅行</a>
+          <a href="#">票务</a>
+          <a href="#">外卖</a>
+          <a href="#">物流</a>
+          <a href="#">客服</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="channel-section">
+      <div class="section-title">
+        <h2>特色频道</h2>
+        <a href="#">查看更多</a>
+      </div>
+      <div class="channel-grid">
+        <article class="channel fashion"><span>潮流穿搭</span><strong>早秋新品 3 件 8 折</strong></article>
+        <article class="channel tech"><span>数码生活</span><strong>耳机手表以旧换新</strong></article>
+        <article class="channel home"><span>理想家</span><strong>厨房收纳一站配齐</strong></article>
+        <article class="channel food"><span>寻味中国</span><strong>产地直发新鲜到家</strong></article>
+      </div>
+    </section>
+
+    <section class="goods-section">
+      <div class="section-title">
+        <h2>猜你喜欢</h2>
+        <div class="filters" aria-label="商品筛选">
+          <button class="active" type="button" data-filter="all">全部</button>
+          <button type="button" data-filter="wear">穿搭</button>
+          <button type="button" data-filter="digital">数码</button>
+          <button type="button" data-filter="home">家居</button>
+        </div>
+      </div>
+      <div class="goods-grid" id="goodsGrid"></div>
+    </section>
+
+    <section class="floor-section">
+      <div class="section-title">
+        <h2>品质生活</h2>
+        <a href="#">进入频道</a>
+      </div>
+      <div class="floor-layout">
+        <article class="floor-feature life-feature">
+          <span>每日好价</span>
+          <strong>把生活过成喜欢的样子</strong>
+          <p>家居、收纳、香氛、餐厨精选组合购。</p>
+        </article>
+        <div class="floor-list">
+          <article><b>家装灵感</b><span>软装搭配清单</span></article>
+          <article><b>厨房焕新</b><span>锅具餐具套装</span></article>
+          <article><b>睡眠升级</b><span>床品低至 6 折</span></article>
+          <article><b>清洁护理</b><span>囤货满减专区</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="floor-section">
+      <div class="section-title">
+        <h2>潮流风尚</h2>
+        <a href="#">查看更多</a>
+      </div>
+      <div class="style-grid">
+        <article><img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=500&q=80" alt="通勤穿搭"><strong>通勤穿搭</strong><span>衬衫、西装裤、乐福鞋</span></article>
+        <article><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=500&q=80" alt="假日裙装"><strong>假日裙装</strong><span>碎花、吊带、防晒衫</span></article>
+        <article><img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=500&q=80" alt="鞋包配饰"><strong>鞋包配饰</strong><span>新色包袋和百搭鞋履</span></article>
+      </div>
+    </section>
+
+    <section class="benefit-section" aria-label="服务保障">
+      <div class="benefit-item"><strong>品质保障</strong><span>正品好货 严选商家</span></div>
+      <div class="benefit-item"><strong>极速物流</strong><span>多仓发货 送达更快</span></div>
+      <div class="benefit-item"><strong>无忧售后</strong><span>退换便捷 服务在线</span></div>
+      <div class="benefit-item"><strong>安全支付</strong><span>交易保护 放心下单</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-columns">
+        <section>
+          <h2>购物指南</h2>
+          <a href="#">免费注册</a>
+          <a href="#">会员权益</a>
+          <a href="#">购物流程</a>
+          <a href="#">常见问题</a>
+        </section>
+        <section>
+          <h2>支付方式</h2>
+          <a href="#">快捷支付</a>
+          <a href="#">余额支付</a>
+          <a href="#">发票说明</a>
+          <a href="#">退款查询</a>
+        </section>
+        <section>
+          <h2>商家服务</h2>
+          <a href="#">商家入驻</a>
+          <a href="#">营销中心</a>
+          <a href="#">规则中心</a>
+          <a href="#">运营工具</a>
+        </section>
+        <section>
+          <h2>关于我们</h2>
+          <a href="#">平台介绍</a>
+          <a href="#">联系我们</a>
+          <a href="#">开放平台</a>
+          <a href="#">廉正举报</a>
+        </section>
+      </div>
+      <div class="friend-links">
+        <strong>友情链接</strong>
+        <a href="#">品牌特卖</a>
+        <a href="#">本地生活</a>
+        <a href="#">全球精选</a>
+        <a href="#">数码频道</a>
+        <a href="#">家装频道</a>
+        <a href="#">生鲜市集</a>
+      </div>
+      <div class="legal">
+        <p>橙集市为前端练习示例页面，页面结构参考综合电商首页常见布局，非淘宝官方网站。</p>
+        <p>© 2026 Orange Market Demo. 增值电信业务经营许可证：示例 ICP 00000000 号</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" type="button" aria-label="回到顶部">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
